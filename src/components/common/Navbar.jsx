@@ -89,7 +89,7 @@ const Navbar = () => {
 
         {/* Right Drawer */}
         <div
-          className={`fixed top-0 right-0 h-full w-[260px] bg-[#2C1638] z-50 transform transition-transform duration-300 min-[810px]:hidden
+          className={`fixed top-0 right-0 h-screen w-[260px] bg-[#7b41a7] z-70 transform transition-transform duration-300 min-[810px]:hidden
           ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
         >
           <div className="flex flex-col gap-6 p-6 pt-6">
