@@ -11,7 +11,7 @@ const Category = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       {/* 🔹 Top Categories */}
-      <div className="flex items-center w-full gap-4 sm:gap-6 md:gap-8.25 overflow-x-auto cursor-pointer px-4">
+      <div className="flex items-center w-full gap-4 sm:gap-6 md:gap-8.25 overflow-x-auto cursor-pointer mb-1 px-4">
         {categories.map((item, index) => (
           <div
             key={index}
@@ -24,8 +24,7 @@ const Category = () => {
                 setOpen(true);
               }
             }}
-            className="flex items-center gap-2 min-w-max"
-          >
+            className="flex items-center gap-2 min-w-max">
             <p
               className={`font-medium text-sm sm:text-base leading-[125%] flex items-center gap-2.75 whitespace-nowrap
               ${
