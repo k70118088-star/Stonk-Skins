@@ -10,8 +10,8 @@ const Category = () => {
 
   return (
     <div className="flex flex-col items-center justify-center">
-      {/* 🔹 Top Categories */}
-      <div className="flex items-center w-full gap-4 sm:gap-6 md:gap-8.25 overflow-x-auto cursor-pointer mb-1 px-4">
+      {/* Top Categories */}
+      <div className="flex items-center w-full gap-4 sm:gap-6 md:gap-8.25 overflow-x-auto cursor-pointer  px-4">
         {categories.map((item, index) => (
           <div
             key={index}
@@ -24,9 +24,9 @@ const Category = () => {
                 setOpen(true);
               }
             }}
-            className="flex items-center gap-2 min-w-max">
+            className="flex items-center h-6.5 gap-2 min-w-max">
             <p
-              className={`font-medium text-sm sm:text-base leading-[125%] flex items-center gap-2.75 whitespace-nowrap
+              className={`font-medium  text-sm sm:text-base leading-[125%] flex items-center gap-2.75 whitespace-nowrap
               ${
                 activeTop === index
                   ? "bg-gradient-to-r from-[#E9AD83] to-[#9B1FE8] bg-clip-text text-transparent"
@@ -51,9 +51,9 @@ const Category = () => {
         ))}
       </div>
 
-      {/* 🔹 Dropdown Box */}
+      {/* Dropdown Box */}
       {open && (
-        <div className="mt-4 w-full max-w-[1167px] bg-[#2C1638]/90 rounded-2xl pt-5.75 pb-8.25 pr-4 sm:pr-6 shadow-lg mx-4">
+        <div className="mt-4 w-full absolute top-32 max-w-[1167px] bg-[#2C1638]/90 rounded-2xl pt-5.75 pb-8.25 pr-4 sm:pr-6 shadow-lg mx-4">
           
           {/* Sub Categories */}
           <div className="flex gap-4 sm:gap-6 md:gap-7.5 mb-5.75 pl-4 sm:pl-[39px] overflow-x-auto">

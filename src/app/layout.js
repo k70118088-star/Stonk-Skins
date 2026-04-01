@@ -1,4 +1,4 @@
-import { DM_Sans } from "next/font/google";
+import { DM_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/common/Navbar";
 
@@ -7,6 +7,10 @@ const dmSans = DM_Sans({
   subsets: ["latin"],
 });
 
+// const poppins = Poppins({
+//   variable: "--font-poppins",
+//   subsets: ["latin"]
+// })
 
 
 export const metadata = {
@@ -23,9 +27,9 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${dmSans.variable} h-full antialiased`}
+      className={`${dmSans.variable}  h-full antialiased`}
     >
-      <body className="min-h-full bg-black flex flex-col">
+      <body className="min-h-full flex flex-col">
         <Navbar />
         {children}
       </body>
