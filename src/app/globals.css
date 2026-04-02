@@ -10,6 +10,28 @@ h1{
   font-family: "Poppins", sans-serif;
 }
 
+.poppins{
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7b41a7;
+  opacity: 40%;
+  border-radius: 5px;
+}
+
 .border-gradient {
   border: 1.5px solid;
   border-image: linear-gradient(180deg,
@@ -52,6 +74,30 @@ h1{
 .box-img{
   background: url('/assets/box.png');
   background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.category-img{
+ background: url('/assets/bg-img.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.slider-btn1{
+  background: url('/assets/slider-btn1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.slider-btn2{
+  background: url('/assets/slider-btn2.png');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;

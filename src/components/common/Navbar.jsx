@@ -12,13 +12,16 @@ import Category from "./Category";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // ✅ reusable close function
+  const closeMenu = () => setMenuOpen(false);
+
   return (
-    <div className="w-full fixed z-10 mx-auto backdrop-blur-[10px] ">
+    <div className="w-full fixed z-10 mx-auto backdrop-blur-[10px]">
       <div className="max-w-287 mx-auto w-full flex flex-col items-center justify-center pt-3 px-4 lg:px-0">
-        
+
         {/* Top Section */}
         <div className="flex items-center justify-between w-full mb-4 sm:gap-0 gap-3 gap-y-3">
-          
+
           {/* Left */}
           <div className="flex items-center gap-7.75 w-full min-[810px]:w-auto">
             <img src="/assets/loho.webp" alt="" className="w-29 h-13.75" />
@@ -41,15 +44,16 @@ const Navbar = () => {
           <div className="min-[810px]:hidden">
             <div className="flex items-center image w-25.75 h-13">
               <button className="flex items-center justify-center bg-[#FFFFFF0F]/6 h-13 w-13 rounded-[500px]">
-                  <Icons icon={"search"} />
-                </button>
-          <button
-            onClick={() => setMenuOpen(true)}
-            className="min-[810px]:hidden ml-4 text-white text-xl"
-          >
-            <FaBars />
-          </button>
-          </div>
+                <Icons icon={"search"} />
+              </button>
+
+              <button
+                onClick={() => setMenuOpen(true)}
+                className="ml-4 text-white text-xl"
+              >
+                <FaBars />
+              </button>
+            </div>
           </div>
 
           {/* Desktop Menu */}
@@ -82,14 +86,14 @@ const Navbar = () => {
         {/* Overlay */}
         {menuOpen && (
           <div
-            onClick={() => setMenuOpen(false)}
+            onClick={closeMenu}
             className="fixed inset-0 bg-black/50 z-40 min-[810px]:hidden"
           />
         )}
 
         {/* Right Drawer */}
         <div
-          className={`fixed top-0 right-0 h-screen w-[260px] bg-[#7b41a7] z-70 transform transition-transform duration-300 min-[810px]:hidden
+          className={`fixed top-0 right-0 h-screen w-full bg-[#7b41a7] z-50 transform transition-transform duration-300 min-[810px]:hidden
           ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
         >
           <div className="flex flex-col gap-6 p-6 pt-6">
@@ -97,37 +101,48 @@ const Navbar = () => {
             {/* Close Button */}
             <div className="flex justify-end">
               <button
-                onClick={() => setMenuOpen(false)}
+                onClick={closeMenu}
                 className="text-white text-xl"
               >
                 <FaTimes />
               </button>
             </div>
 
-            <p className="font-medium text-base text-[#F5F5F5]">
+            {/* Menu Items */}
+            <div className="flex flex-col gap-4 mt-10 items-center justify-center">
+            <p
+              onClick={closeMenu}
+              className="font-medium text-base text-[#F5F5F5] cursor-pointer"
+            >
               Market
             </p>
 
-            <p className="font-bold text-base text-[#F5F5F5] flex items-center gap-2">
+            <p
+              onClick={closeMenu}
+              className="font-bold text-base text-[#F5F5F5] flex items-center gap-2 cursor-pointer"
+            >
               <span className="text-[#FFFFFF]/10">
                 <Icons icon={"wallet"} />
               </span>
               $0
             </p>
 
-            <div className="flex items-center">
+            <div
+              onClick={closeMenu}
+              className="flex items-center cursor-pointer"
+            >
               <p className="text-[#F5F5F5] mr-2">John Doe</p>
               <div className="h-11 w-11 flex items-center justify-center text-white">
                 <FaUserAlt />
               </div>
               <FaCaretDown className="text-white ml-1" />
             </div>
-
+            </div>
           </div>
         </div>
 
         {/* Bottom Category */}
-        <div className="border-t border-t-[#43344C8C]  w-full pt-3.5 pb-4.5 overflow-x-auto">
+        <div className="border-t border-t-[#43344C8C] w-full pt-3.5 pb-4.5 overflow-x-auto">
           <Category />
         </div>
 
