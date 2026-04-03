@@ -19,7 +19,7 @@ export const Products = [
 
 
 export const Sections = [
-    { className: "lg:left-36.5" },
-    { className: "lg:right-36.5" },
-    { className: "" },
+    { className: "lg:left-32" , mt: "-mt-0.5 pt-14 sm:pt-18 md:pt-22 lg:pt-26" },
+    { className: "lg:right-36.5" , mt: "-mt-0.5 pt-14 sm:pt-18 md:pt-22 lg:pt-26" },
+    { className: "" , mt: "-mt-0.5 pt-14 sm:pt-18 md:pt-22 lg:pt-26" },
   ];

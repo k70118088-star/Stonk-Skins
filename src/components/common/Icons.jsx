@@ -177,6 +177,55 @@ const Icons = ({ icon, className = "" }) => {
         />
       </svg>
     ),
+    violetStar: (
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10 13.6761L13.0417 12.8616L14.3125 17L10 13.6761ZM17 8.32704H11.6458L10 3L8.35417 8.32704H3L7.33334 11.6289L5.6875 16.956L10.0208 13.6541L12.6875 11.6289L17 8.32704Z"
+          fill="url(#paint0_linear_1_753)"
+        />
+        <path
+          d="M10 13.6761L13.0417 12.8616L14.3125 17L10 13.6761ZM17 8.32704H11.6458L10 3L8.35417 8.32704H3L7.33334 11.6289L5.6875 16.956L10.0208 13.6541L12.6875 11.6289L17 8.32704Z"
+          fill="url(#paint1_linear_1_753)"
+          fillOpacity="0.15"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear_1_753"
+            x1="3"
+            y1="3.7459"
+            x2="10.4184"
+            y2="19.0729"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#E9AD83" />
+            <stop offset="1" stopColor="#9B1FE8" />
+          </linearGradient>
+          <linearGradient
+            id="paint1_linear_1_753"
+            x1="10"
+            y1="3"
+            x2="10"
+            y2="17"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#BEBEBE" />
+            <stop offset="0.84" stopColor="white" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
+    ),
+    star: (
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 21.3522L20.0833 19.7233L22.625 28L14 21.3522ZM28 10.6541H17.2917L14 0L10.7083 10.6541H0L8.66667 17.2579L5.375 27.9119L14.0417 21.3082L19.375 17.2579L28 10.6541Z" fill="white"/>
+</svg>
+
+    ),
   };
 
   return iconList[icon] || null;

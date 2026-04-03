@@ -6,7 +6,8 @@
   font-family: "DM Sans", sans-serif;
 }
 
-h1{
+
+h1, h6{
   font-family: "Poppins", sans-serif;
 }
 
@@ -79,14 +80,6 @@ h1{
   position: relative;
 }
 
-.category-img{
- background: url('/assets/bg-img.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
 .slider-btn1{
   background: url('/assets/slider-btn1.png');
   background-size: cover;
@@ -101,4 +94,59 @@ h1{
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+}
+
+.how-img{
+  background: url('/assets/how.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.howbg-img{
+  background: url('/assets/howbg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+@theme {
+  /* Colors */
+  --color-white: #f5f5f5;
+  --color-violet: #432755;
+  --color-violet2: #3b214b;
+  --color-dark-violet: #220e2d;
+  --color-category-border: #432755;
+  --color-linear: #e9ad83;
+  --color-gradient: #9b1fe8;
+  --color-purple: #1c0829;
+  --color-red: #ff6565;
+
+  /* Line Height */
+  --leading-90: 90%;
+  --leading-100: 100%;
+  --leading-110: 110%;
+  --leading-118: 118%;
+  --leading-120: 120%;
+  --leading-125: 125%;
+  --leading-130: 130%;
+  --leading-135: 135%;
+  --leading-140: 140%;
+  --leading-150: 150%;
+
+  /* Font-Size */
+  --text-custom-sm: 15px;
+  --text-custom-xs: 13px;
+  --text-custom-2xl: 28px;
+  --text-custom-3xl: 32px;
+  --text-custom-4xl: 40px;
+  --text-custom-6xl: 64px;
+
+  /* Font Family */
+  --font-dm-sans: var(--font-dm-sans);
+  --font-poppins: var(--font-poppins);
+
+  /* Letter-Spacing */
+  --tracking-6: 6%;
 }

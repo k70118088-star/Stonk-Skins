@@ -6,7 +6,13 @@ import { useRef } from "react";
 
 const CategorySection = () => {
   return (
-    <div>
+    <div style={{ backgroundImage: `url('/assets/image.webp')` }} className="bg-center bg-cover bg-no-repeat">
+      <div className="">
+      <div className="top-340 absolute -left-50 w-[300px] h-[300px] md:w-[437px] md:h-[437px] rounded-full bg-gradient-to-r from-[#E9AD83] to-[#9B1FE8] blur-[150px]"></div>
+       <div className="top-400 absolute -right-0 w-[300px] h-[300px] md:w-[437px] md:h-[437px] rounded-full bg-gradient-to-r from-[#E9AD83] to-[#9B1FE8] blur-[150px]"></div>
+
+    </div>
+    <div >
       {Sections.map((item, index) => {
         const prevRef = useRef(null);
         const nextRef = useRef(null);
@@ -14,13 +20,12 @@ const CategorySection = () => {
         return (
           <div
             key={index}
-            className="w-full pt-14 sm:pt-18 md:pt-22 lg:pt-26 -mt-0.5 min-h-[600px] sm:min-h-[700px] md:min-h-[800px] lg:min-h-[850px] overflow-hidden category-img"
-          >
+           
+            className={`w-full ${item.mt} relative pt-14 sm:pt-18 md:pt-22 lg:pt-26 overflow-hidden`}>
             <div className="mx-auto px-4 sm:px-6 lg:px-8">
-              
               {/* Header */}
-              <div className="flex items-center max-w-287 mx-auto justify-between mb-4 sm:mb-5 md:mb-6">
-                <h2 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-[118%] tracking-[-6%] font-medium">
+              <div className="flex items-center max-w-287 mx-auto justify-center min-[450px]:justify-between mb-4 sm:mb-5 md:mb-6">
+                <h2 className="text-white text-[40px] lg:text-5xl leading-[118%] tracking-[-6%] font-medium">
                   Category Name
                 </h2>
 
@@ -30,7 +35,7 @@ const CategorySection = () => {
                     {/* Prev Button */}
                     <button
                       ref={prevRef}
-                      className="w-15 h-15 slider-btn1 rounded-[19px] text-white flex items-center justify-center"
+                      className="w-15 h-15 cursor-pointer slider-btn1 rounded-[19px] text-white flex items-center justify-center"
                     >
                       <Icons icon={"leftArrow"} />
                     </button>
@@ -38,7 +43,7 @@ const CategorySection = () => {
                     {/* Next Button */}
                     <button
                       ref={nextRef}
-                      className="w-15 h-15 slider-btn2 rounded-[19px] text-white flex items-center justify-center"
+                      className="w-15 h-15 cursor-pointer slider-btn2 rounded-[19px] text-white flex items-center justify-center"
                     >
                       <Icons icon={"rightArrow"} />
                     </button>
@@ -58,6 +63,7 @@ const CategorySection = () => {
           </div>
         );
       })}
+    </div>
     </div>
   );
 };

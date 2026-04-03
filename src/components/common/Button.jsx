@@ -1,9 +1,9 @@
 import React from 'react'
 import Icons from './Icons'
 
-const Button = () => {
+const Button = ({className}) => {
   return (
-    <div>
+    <div className={className}>
         <div className="flex items-center btn-img cursor-pointer max-w-61.25 w-full h-13">
                <button className='flex items-center justify-center w-48.25 text-base font-medium leading-[125%] tracking-[-6%] text-[#F5F5F5]'>Login with Steam</button>
                 <button className="flex items-center justify-center bg-[#FFFFFF0F]/6 h-13 w-13 rounded-[500px]">

@@ -35,7 +35,7 @@ const Slider = ({ className, prevRef, nextRef }) => {
       {Products.map((item) => (
         <SwiperSlide key={item.id}>
           <div className="bg-white/6 rounded-3xl p-3 border border-white/10 relative">
-            <div className="bg-[#220933] max-w-86.25 h-55.25 rounded-3xl flex items-center justify-center">
+            <div className="bg-[#220933] h-55.25 pb-4.75 pr-3.5 pt-7.5 rounded-3xl flex items-center justify-center">
               <Image
                 src={item.image}
                 alt="product"
