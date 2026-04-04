@@ -6,7 +6,7 @@ const HowWorks = () => {
         <div className="w-full min-h-180 mt-15.75 how-img">
             <div className="w-full min-h-158 howbg-img">
                 <div className="pt-4.25 sm:pt-15 md:pt-30 lg:pt-42.25 flex flex-col items-center justify-center max-w-285 w-full mx-auto">
-                    <h6 className="font-medium text-[#FFFFFF] text-5xl leading-[118%] tracking-[-6%]">
+                    <h6 className="font-medium text-[#FFFFFF] text-[40px] sm:text-5xl leading-[118%] tracking-[-6%]">
                         How It Works
                     </h6>
                     <div className="mt-5.5 flex flex-wrap md:flex-nowrap items-center justify-center md:justify-between gap-8 md:gap-0 w-full">

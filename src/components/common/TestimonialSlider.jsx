@@ -40,7 +40,7 @@ const TestimonialSlider = ({ prevRef, nextRef }) => {
         }, 0);
       }}
     >
-      {[1, 2, 3, 4].map((index) => (
+      {[1, 2, 3, 4, 5, 6, 7].map((index) => (
         <SwiperSlide key={index}>
           <div className="p-[1.5px] text-[#FFFFFF] rounded-3xl bg-[linear-gradient(180deg,rgba(255,255,255,0.34)_0%,rgba(255,255,255,0)_100%)] hover:border-linear border border-transparent duration-300 ease-in ">
             <div className="rounded-3xl min-h-76 md:min-h-91.5 h-full cursor-pointer group text-left duration-200 ease-in bg-[#2C1638] p-5 flex flex-col justify-between max-w-92 w-full">

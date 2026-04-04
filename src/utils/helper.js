@@ -23,3 +23,23 @@ export const Sections = [
     { className: "lg:right-36.5" , mt: "-mt-0.5 pt-14 sm:pt-18 md:pt-22 lg:pt-26" },
     { className: "" , mt: "-mt-0.5 pt-14 sm:pt-18 md:pt-22 lg:pt-26" },
   ];
+
+export const AccordionData = [
+  {
+    title: "Nunc pellentesque consectetur",
+    content:
+      "Lorem ipsum dolor sit amet consectetur. Cursus habitant ornare pellentesque egestas. Consectetur blandit justo bibendum quam. Pharetra nulla tortor viverra hendrerit ipsum donec eget venenatis. Lobortis nec augue et sed ut. Blandit convallis eget laoreet urna. A tristique vitae arcu augue mauris vel lacus proin. Tincidunt dui velit faucibus magna nunc porta amet sed. Ornare amet sagittis ut amet facilisis lectus. Amet eu a urna erat hac.",
+  },
+  {
+    title: "In donec in tristique integer",
+    content: "Content for second accordion.",
+  },
+  {
+    title: "Nunc porta pellentesque",
+    content: "Content for third accordion.",
+  },
+  {
+    title: "Aliquam mauris tempus ullamcorper",
+    content: "Content for fourth accordion.",
+  },
+];

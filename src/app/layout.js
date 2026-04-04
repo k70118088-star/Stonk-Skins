@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${dmSans.variable}  h-full antialiased`}
     >
-      <body className="min-h-full bg-[#220C30] flex flex-col">
+      <body style={{ backgroundImage: `url('/assets/bg-lines.png')` }} className="min-h-full bg-[#220C30] flex flex-col bg-cover bg-center">
         <Navbar />
         {children}
       </body>
