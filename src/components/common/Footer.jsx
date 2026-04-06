@@ -62,7 +62,7 @@ const Footer = () => {
                   placeholder="Enter your email"
                   className="py-4 max-w-67 focus:outline-none w-full h-[52px] pl-8 font-medium text-base leading-[125%] text-[#F5F5F56E]/43 bg-[#FFFFFF0F]/6 rounded-[68px]"
                 />
-                <button className="flex items-center justify-center bg-[#FFFFFF0F]/6 h-13 w-13 rounded-[500px]">
+                <button aria-label='mail' className="flex items-center justify-center bg-[#FFFFFF0F]/6 h-13 w-13 rounded-[500px]">
                   <Icons icon={"mail"} />
                 </button>
               </div>

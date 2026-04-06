@@ -32,7 +32,9 @@ export default function RootLayout({ children }) {
     >
       <body style={{ backgroundImage: `url('/assets/bg-lines.png')` }} className="min-h-full bg-[#220C30] flex flex-col bg-cover bg-center">
         <Navbar />
+        <main>
         {children}
+        </main>
         <Footer />
       </body>
     </html>
