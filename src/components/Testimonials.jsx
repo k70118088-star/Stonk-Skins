@@ -44,6 +44,7 @@ const Testimonials = () => {
             <img
               src={"/assets/testimonial.png"}
               height={107}
+              loading="lazy"
               width={104}
               alt="testimonial-icon"
             />

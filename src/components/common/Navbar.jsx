@@ -35,7 +35,7 @@ const Navbar = () => {
 
           {/* Left */}
           <div className="flex items-center gap-7.75 w-full min-[810px]:w-auto">
-            <img src="/assets/loho.webp" alt="" className="w-29 h-13.75" />
+            <img src="/assets/loho.webp" loading="lazy" alt="logo" className="w-29 h-13.75" />
 
             <div className="hidden min-[810px]:block">
               <div className="flex items-center backgroung-img max-w-[320px] w-full h-13">

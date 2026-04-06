@@ -39,6 +39,7 @@ const Slider = ({ className, prevRef, nextRef }) => {
               <Image
                 src={item.image}
                 alt="product"
+                loading="lazy"
                 width={317}
                 height={91}
                 className="rotate-15"

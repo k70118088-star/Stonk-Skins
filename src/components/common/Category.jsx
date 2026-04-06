@@ -83,6 +83,7 @@ const Category = () => {
                 <div className="bg-[#3A1A4D] rounded-xl">
                   <img
                     src="/assets/component.png"
+                    loading="lazy"
                     alt="product"
                     className="w-full h-[65px] sm:h-[73px] object-contain"
                   />
