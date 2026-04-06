@@ -13,7 +13,7 @@ const Hero = () => {
           <div className="sm:px-0 px-3">
             {/* Heading */}
             <h1 className="mt-40 lg:mt-63 max-w-full sm:max-w-181.75 text-white text-[40px] md:text-[52px] lg:text-[64px] leading-[140%] sm:leading-[120%] tracking-[-6%] font-medium text-left">
-              The Ultimate{" "}
+              The Ultimate
               <span className="text-[#E9AE82]"> CS 2 Marketplace </span> for
               Gamers Who Mean Business
             </h1>

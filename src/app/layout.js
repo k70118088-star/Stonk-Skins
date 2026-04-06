@@ -16,10 +16,10 @@ const dmSans = DM_Sans({
 
 export const metadata = {
   title: "Stonk Skins",
-  description: "",
+  description: "The Ultimate CS 2 Marketplace for Gamers Who Mean Business",
   openGraph: {
     title: "Stonk Skins",
-    description: "",
+    description: "The Ultimate CS 2 Marketplace for Gamers Who Mean Business",
     images: ["/hero.png"],
   },
 };
