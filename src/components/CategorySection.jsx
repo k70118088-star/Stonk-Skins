@@ -35,6 +35,7 @@ const CategorySection = () => {
                     {/* Prev Button */}
                     <button
                       ref={prevRef}
+                      aria-label="prevbutton"
                       className="w-15 h-15 cursor-pointer slider-btn1 rounded-[19px] text-white flex items-center justify-center"
                     >
                       <Icons icon={"leftArrow"} />
@@ -43,6 +44,7 @@ const CategorySection = () => {
                     {/* Next Button */}
                     <button
                       ref={nextRef}
+                      aria-label="nextbutton"
                       className="w-15 h-15 cursor-pointer slider-btn2 rounded-[19px] text-white flex items-center justify-center"
                     >
                       <Icons icon={"rightArrow"} />

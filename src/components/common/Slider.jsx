@@ -69,7 +69,7 @@ const Slider = ({ className, prevRef, nextRef }) => {
                 </p>
               </div>
 
-              <button className="w-15.25 h-15.25 img cursor-pointer flex items-center justify-center text-[#FFFFFF]">
+              <button aria-label="add to card" className="w-15.25 h-15.25 img cursor-pointer flex items-center justify-center text-[#FFFFFF]">
                 <Icons icon={"bag"} />
               </button>
             </div>
