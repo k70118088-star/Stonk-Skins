@@ -14,10 +14,10 @@ const Footer = () => {
                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget lorem.
                  </p>
                  <div className='flex items-center gap-3'>
-                    <div className='flex items-center rounded-[41px] bg-gradient-to-r from-orange-400 to-purple-500 justify-center h-8 w-8'><a href=""><Icons icon={"facebook"}/></a></div>
-                    <div className='flex items-center rounded-[41px] bg-gradient-to-r from-orange-400 to-purple-500 justify-center h-8 w-8'><a href=""><Icons icon={"x"}/></a></div>
-                    <div className='flex items-center rounded-[41px] bg-gradient-to-r from-orange-400 to-purple-500 justify-center h-8 w-8'><a href=""><Icons icon={"youtube"}/></a></div>
-                    <div className='flex items-center rounded-[41px] bg-gradient-to-r from-orange-400 to-purple-500 justify-center h-8 w-8'><a href=""><Icons icon={"linkedin"}/></a></div>
+                    <div className='flex items-center rounded-[41px] bg-gradient-to-r from-orange-400 to-purple-500 justify-center h-8 w-8'><a href="https://facebook.com" aria-label="Visit our Facebook page"><Icons icon={"facebook"}/></a></div>
+                    <div className='flex items-center rounded-[41px] bg-gradient-to-r from-orange-400 to-purple-500 justify-center h-8 w-8'><a href="https://x.com" aria-label="Visit our X profile"><Icons icon={"x"}/></a></div>
+                    <div className='flex items-center rounded-[41px] bg-gradient-to-r from-orange-400 to-purple-500 justify-center h-8 w-8'><a href="https://youtube.com" aria-label="Visit our youtube page"><Icons icon={"youtube"}/></a></div>
+                    <div className='flex items-center rounded-[41px] bg-gradient-to-r from-orange-400 to-purple-500 justify-center h-8 w-8'><a href="https://linkedin.com" aria-label="Visit our linkedin page"><Icons icon={"linkedin"}/></a></div>
                  </div>
             </div>
 
