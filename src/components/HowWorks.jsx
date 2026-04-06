@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./common/Button";
+import Icons from "./common/Icons";
 
 const HowWorks = () => {
     return (
@@ -9,9 +10,11 @@ const HowWorks = () => {
                     <h6 className="font-medium text-[#FFFFFF] text-[40px] sm:text-5xl leading-[118%] tracking-[-6%]">
                         How It Works
                     </h6>
-                    <div className="mt-5.5 flex flex-wrap md:flex-nowrap items-center justify-center md:justify-between gap-8 md:gap-0 w-full">
+                    <div className="-mt-32 lg:block hidden absolute "><Icons icon={"line"}/></div>
+                    <div className="mt-5.5 relative flex flex-wrap md:flex-nowrap items-center justify-center md:justify-between gap-8 md:gap-0 w-full">
 
                         <div className="flex flex-col items-center justify-center w-full sm:w-[45%] md:w-auto">
+                            
                             <div className="flex items-center justify-center w-[68.04px] h-17.25 bg-gradient-to-r from-orange-400 to-purple-500 rounded-[19px]">
                                 <p className="poppins font-medium text-[#FFFFFF] text-[32px] leading-[118%] tracking-[-6%]">
                                     01

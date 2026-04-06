@@ -8,8 +8,8 @@ const Testimonials = () => {
     const prevRef = useRef()
     const nextRef = useRef()
   return (
-    <div className='w-full mx-auto flex flex-col items-center justify-center overflow-hidden'>
-        <div className='max-w-287 mx-auto w-full mt-16 flex items-center justify-between'>
+    <div className='w-full mx-auto flex flex-col items-center justify-center overflow-hidden sm:px-0 px-4'>
+        <div className='max-w-287 mx-auto w-full mt-16 flex items-center justify-between '>
             <h2 className='poppins text-[#FFFFFF] font-medium text-5xl leading-[118%] tracking-[-6%]'>Testimonials</h2>
             <div className="hidden min-[450px]:block">
                   <div className="grid grid-cols-2 gap-2 sm:gap-3">

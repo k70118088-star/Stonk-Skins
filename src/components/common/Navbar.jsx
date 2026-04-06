@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   FaCaretDown,
   FaUserAlt,
@@ -12,8 +12,19 @@ import Category from "./Category";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // ✅ reusable close function
   const closeMenu = () => setMenuOpen(false);
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [menuOpen]);
 
   return (
     <div className="w-full fixed z-10 mx-auto backdrop-blur-[10px]">
@@ -110,33 +121,33 @@ const Navbar = () => {
 
             {/* Menu Items */}
             <div className="flex flex-col gap-4 mt-10 items-center justify-center">
-            <p
-              onClick={closeMenu}
-              className="font-medium text-base text-[#F5F5F5] cursor-pointer"
-            >
-              Market
-            </p>
+              <p
+                onClick={closeMenu}
+                className="font-medium text-base text-[#F5F5F5] cursor-pointer"
+              >
+                Market
+              </p>
 
-            <p
-              onClick={closeMenu}
-              className="font-bold text-base text-[#F5F5F5] flex items-center gap-2 cursor-pointer"
-            >
-              <span className="text-[#FFFFFF]/10">
-                <Icons icon={"wallet"} />
-              </span>
-              $0
-            </p>
+              <p
+                onClick={closeMenu}
+                className="font-bold text-base text-[#F5F5F5] flex items-center gap-2 cursor-pointer"
+              >
+                <span className="text-[#FFFFFF]/10">
+                  <Icons icon={"wallet"} />
+                </span>
+                $0
+              </p>
 
-            <div
-              onClick={closeMenu}
-              className="flex items-center cursor-pointer"
-            >
-              <p className="text-[#F5F5F5] mr-2">John Doe</p>
-              <div className="h-11 w-11 flex items-center justify-center text-white">
-                <FaUserAlt />
+              <div
+                onClick={closeMenu}
+                className="flex items-center cursor-pointer"
+              >
+                <p className="text-[#F5F5F5] mr-2">John Doe</p>
+                <div className="h-11 w-11 flex items-center justify-center text-white">
+                  <FaUserAlt />
+                </div>
+                <FaCaretDown className="text-white ml-1" />
               </div>
-              <FaCaretDown className="text-white ml-1" />
-            </div>
             </div>
           </div>
         </div>

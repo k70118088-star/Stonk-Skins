@@ -6,6 +6,7 @@ const Questions = () => {
     <div className='mt-16 sm:mt-20 md:mt-24 lg:mt-30 w-full bg-cover bg-center min-h-[500px] sm:min-h-[600px] md:min-h-[700px] lg:min-h-194.5' style={{ backgroundImage: `url('/assets/accordion-bg.png')` }}>
       
       <div className='max-w-287 px-4 sm:px-6 md:px-8 mx-auto w-full flex flex-col lg:flex-row gap-10 lg:gap-0'>
+        <div className="absolute top-1070 right-0 w-[300px] h-[300px] md:w-[437px] md:h-[437px] rounded-full bg-gradient-to-r from-[#E9AD83] to-[#9B1FE8] blur-[150px]"></div>
         
         {/* Left Content */}
         <div className='w-full lg:w-1/2'>
