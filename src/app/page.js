@@ -1,5 +1,4 @@
 import CategorySection from "@/components/CategorySection";
-import Footer from "@/components/common/Footer";
 import Hero from "@/components/Hero";
 import HowWorks from "@/components/HowWorks";
 import Questions from "@/components/Questions";
@@ -17,7 +16,6 @@ export default function Home() {
       <Testimonials />
       <Questions />
       <Start />
-      <Footer />
     </>
   );
 }
